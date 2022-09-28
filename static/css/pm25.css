@@ -1,0 +1,27 @@
+body {
+    background-color: blanchedalmond;
+}
+
+#contanier {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+
+}
+
+#date {
+    background-color: brown;
+    color: aliceblue;
+}
+
+table {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:768px) {
+    table {
+        width: 80%;
+    }
+}

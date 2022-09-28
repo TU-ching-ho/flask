@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="getTime()">
+    <h1>hello,{{name}}</h1>
+    <p id="date">{{date}}</p>
+    <a href="/stock" target="_blank">亞股資訊</a><br>
+    <a href="/pm25" target="_blank">pm2.5資訊</a><br>
+    <a href="/pm25-charts">pm2.5資訊圖</a>
+
+    <script>
+        const timeEl = document.querySelector("#date");
+        function getTime() {
+            let date = new Date();
+            timeEl.innerText = `${date.getFullYear()}-${date.getMonth() + 1}\
+    -${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+
+            setTimeout(getTime, 1000);
+        }
+    </script>
+</body>
+
+</html>
